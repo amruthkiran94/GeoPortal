@@ -22,5 +22,22 @@
     "gov.uk",
     "gov.nz",
     "services.aremi.data61.io"
-  ]
+  ],
+  "newShareUrlPrefix": "share",
+  "proxyAllDomains": false,
+  "clientConfigUrl": "https://terria-catalogs-public.storage.googleapis.com/nationalmap/config/prod.json",
+  "version": "4.0.1",
+  "shareUrlPrefixes": {
+    "share": {
+      "service": "gist",
+      // Optional: your Github access token with Gist creation privileges. If not supplied, all Gists will be created as "anonymous" and lower usage limits apply
+      "accessToken": ""
+      // Optional: user agent HTTP Header to set
+      //"userAgent": "My service",
+      // Optional: The filename to give to the gist file (default: usercatalog.json)
+      //"gistFilename":  "usercatalog.json",
+      // Optional: The description attached to each Gist
+      //"gistDescription": "User catalog"
+    }
+  }
 }
